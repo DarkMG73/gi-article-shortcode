@@ -1,0 +1,100 @@
+node_modules
+
+# ignore everything in the htdocs folder except the "wp-content" directory.
+/htdocs/*
+!/htdocs/wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins" directory (only track the directory itself)
+# "themes" directory
+# "plugins" directory (only track the directory itself)
+/htdocs/wp-content/*
+!/htdocs/wp-content/mu-plugins/
+/htdocs/wp-content/mu-plugins/*
+!/htdocs/wp-content/plugins/
+/htdocs/wp-content/plugins/*
+!/htdocs/wp-content/themes/
+
+# exclude any custom mu-plugins you want tracked
+# !/htdocs/wp-content/mu-plugins/my-script.php
+
+# exclude any custom plugins you want tracked
+# !/htdocs/wp-content/plugins/my-custom-plugin/
+
+# ignore specific themes
+/htdocs/wp-content/themes/twenty*/
+# /htdocs/wp-content/themes/my-parent-theme/
+
+# track responsive favicon files
+!/htdocs/android-chrome-*.png
+!/htdocs/apple-touch-icon.png
+!/htdocs/apple-touch-icon-*.png
+!/htdocs/favicon.ico
+!/htdocs/favicon-*.png
+!/htdocs/mstile-*.png
+!/htdocs/safari-pinned-tab.svg
+!/htdocs/browserconfig.xml
+!/htdocs/manifest.json
+
+# ----------------
+# from here down, we're just removing unsafe or editor files.
+# there should be no need to customize any of this
+# ----------------
+
+# ignore bower and nodejs install folders, and sass cache
+bower_components/
+node_modules/
+.sass-cache/
+
+# ignore all files starting with . (hidden linux files)
+.*
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!/.gitignore
+!/.gitattributes
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!/.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it even if another rule is added above)
+!/readme.md
+
+# ignore all files that start with ~ (windows temp files)
+~*
+
+# ignore OS generated files
+ehthumbs.db
+.DS_Store
+Thumbs.db
+
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.idea
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.css.map
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.phar

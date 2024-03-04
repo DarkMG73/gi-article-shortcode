@@ -1,0 +1,16 @@
+.gi-keyword, kw {
+	font-weight: 700;
+	font-style: italic;
+}
+
+.code-js-inline, .code-php-inline, .code-html-inline, .code-css-inline {
+    display: inline-block !important;
+}
+
+.mce-menu-item.mce-menu-item-preview.mce-active .mce-text {
+    text-shadow: 0 0 3px white;
+    background: white;
+    border-radius: 0.25em;
+    padding: 0 0.5em;
+    color: black;
+}
