@@ -573,8 +573,8 @@ add_shortcode('giplearn', 'giplearn_shortcode');
 
 
 function gicode_shortcode($atts, $content = null) {
-               
-    $output = '<div class="topic-code-wrap"><pre><code class="language-javascript" data-language="java">'.$content.'</code></pre></div>';
+    $space =   '<p></p><p></p>'   ;     
+    $output = '<div class="topic-code-wrap"><pre><code class="language-javascript" data-language="java"> '.$content.'<p></p><p></p></code></pre></div>';
     
     return $output;
 
